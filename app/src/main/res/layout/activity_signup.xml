@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/logo1"
+            app:shapeAppearanceOverlay="@style/CircularImageView"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create an account"
+            android:textSize="28sp"
+            android:textColor="#1C5588"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxStrokeColor="#1C5588"
+            app:hintTextColor="#1C5588"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColorHint="#818181"
+                android:textColor="#040404"
+                android:inputType="textPersonName"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxStrokeColor="#1C5588"
+            app:hintTextColor="#1C5588"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="#818181"
+                android:textColor="#040404"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:boxStrokeColor="#1C5588"
+            app:hintTextColor="#1C5588"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="#818181"
+                android:textColor="#040404"
+                android:inputType="textPassword"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="16sp"
+                android:textColor="#1C5588"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"/>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/genderGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:chipSpacingHorizontal="12dp"
+                android:gravity="center">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/maleChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Man"
+                    android:textSize="16sp"
+                    android:checkable="true"
+                    android:textAlignment="center"
+                    app:chipMinHeight="48dp"
+                    app:chipBackgroundColor="@color/chip_background_color"
+                    app:chipStrokeColor="#1C5588"
+                    app:chipStrokeWidth="1dp"
+                    app:chipIconEnabled="true"
+                    app:chipIcon="@drawable/ic_male"
+                    app:chipIconTint="@color/chip_text_color"
+                    app:chipIconSize="24dp"
+                    app:chipEndPadding="16dp"
+                    app:chipStartPadding="16dp"
+                    app:chipCornerRadius="24dp"
+                    app:rippleColor="#B39DDB"
+                    android:elevation="2dp"
+                    android:textColor="@color/chip_text_color"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/femaleChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Woman"
+                    android:textSize="16sp"
+                    android:checkable="true"
+                    android:textAlignment="center"
+                    app:chipMinHeight="48dp"
+                    app:chipBackgroundColor="@color/chip_background_color"
+                    app:chipStrokeColor="#1C5588"
+                    app:chipStrokeWidth="1dp"
+                    app:chipIconEnabled="true"
+                    app:chipIcon="@drawable/ic_female"
+                    app:chipIconTint="@color/chip_text_color"
+                    app:chipIconSize="24dp"
+                    app:chipEndPadding="16dp"
+                    app:chipStartPadding="16dp"
+                    app:chipCornerRadius="24dp"
+                    app:rippleColor="#B39DDB"
+                    android:elevation="2dp"
+                    android:textColor="@color/chip_text_color"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Sign up"
+            android:textSize="16sp"
+            app:cornerRadius="8dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#1C5588"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? "
+                android:textColor="#757575"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/loginRedirectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textColor="#00BDC8"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:indeterminateTint="#00BDC8"/>
+
+    </LinearLayout>
+</ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

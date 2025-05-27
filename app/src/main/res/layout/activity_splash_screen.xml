@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:ignore="ExtraText">
+
+    <!-- Couche de fond bleu pour l'animation -->
+    <View
+        android:id="@+id/blue_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1C5588" />
+
+    <!-- Logo agrandi -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo1"
+        android:contentDescription="Logo de l'application" />
+
+    <!-- Nom de l'application -->
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="QUIZQUEST"
+        android:textSize="20sp"
+        android:textColor="#00BDC8"
+        android:fontFamily="sans-serif-light"
+        android:shadowColor="#000099"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+    <!-- Texte en dessous -->
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Loading..."
+        android:textSize="20sp"
+        android:textColor="#1C5588"
+        android:fontFamily="sans-serif-light" />
+
+    <!-- Barre de progression colorée -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="200dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/loading_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:progressTint="#00BDC8"
+        android:indeterminateTint="#00BDC8" />
+
+</RelativeLayout>

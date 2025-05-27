@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern Card Style -->
+    <style name="ModernCard">
+        <item name="android:background">@drawable/rounded_background_color2</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TextHeader">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#1C2942</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextSubheader">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#2C3E50</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextBody">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#34495E</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Progress Bar Style -->
+    <style name="ModernProgressBar" parent="Widget.MaterialComponents.LinearProgressIndicator">
+        <item name="trackCornerRadius">8dp</item>
+        <item name="trackThickness">8dp</item>
+    </style>
+
+    <!-- Circular Image View Style -->
+    <style name="CircularImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Rounded Image View Style -->
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+</resources>
